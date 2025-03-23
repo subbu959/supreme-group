@@ -23,19 +23,19 @@ const sections = [
 ];
 
 export default function VehicleScrollSection() {
-  const [activeSection, setActiveSection] = useState(0);
+  const [activeSection,] = useState(0);
   const [activeVideoIndex, setActiveVideoIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
+  // const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  const scrollToSection = (sectionIndex: number) => {
-    const scrollY = (1 + sectionIndex) * window.innerHeight; // +1 accounts for the Hero section
-    window.scrollTo({
-      top: scrollY,
-      behavior: "smooth",
-    });
-  };
+  // const scrollToSection = (sectionIndex: number) => {
+  //   const scrollY = (1 + sectionIndex) * window.innerHeight; // +1 accounts for the Hero section
+  //   window.scrollTo({
+  //     top: scrollY,
+  //     behavior: "smooth",
+  //   });
+  // };
 
  
 
@@ -57,17 +57,17 @@ export default function VehicleScrollSection() {
     }
   }, [activeSection, activeVideoIndex, isPlaying]);
 
-  const togglePlayPause = () => {
-    const video = videoRef.current;
-    if (video) {
-      if (isPlaying) {
-        video.pause();
-      } else {
-        video.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  };
+  // const togglePlayPause = () => {
+  //   const video = videoRef.current;
+  //   if (video) {
+  //     if (isPlaying) {
+  //       video.pause();
+  //     } else {
+  //       video.play();
+  //     }
+  //     setIsPlaying(!isPlaying);
+  //   }
+  // };
 
   return (
     <>
