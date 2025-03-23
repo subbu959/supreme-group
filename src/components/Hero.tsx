@@ -20,14 +20,16 @@ export default function Hero() {
       {/* Hero Content */}
       <div className="relative z-20 h-full flex items-center justify-center text-center px-4">
         <div className="text-white max-w-4xl">
-          <p className="text-base sm:text-lg text-gray-300 mb-2 tracking-wide">
+          <p className="text-xl  text-white tracking-wider uppercase mb-2">
             Performance in motion
           </p>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-4">
-            Soft Trims and NVH Solutions
+
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+            Soft Trims and <span className="text-cyan-400">NVH Solutions</span>
           </h1>
-          <p className="text-lg sm:text-2xl font-light text-gray-200">
-            for seamless rides
+
+          <p className="text-3xl  text-white ">
+            For seamless rides
           </p>
         </div>
       </div>
